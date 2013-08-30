@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/diceChooser_fragment"
+        android:name="roadSearcher.fragments.DiceChooserFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/dice_chooser" />
+
+    <fragment
+        android:id="@+id/diceThrower_fragment"
+        android:name="roadSearcher.fragments.DiceThrowerFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout="@layout/dice_thrower" />
+
+</LinearLayout>

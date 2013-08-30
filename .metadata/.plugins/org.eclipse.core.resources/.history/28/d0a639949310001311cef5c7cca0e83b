@@ -1,0 +1,5 @@
+package roadSearcher.roller;
+
+public class Globals {
+	public static int = 0;
+}

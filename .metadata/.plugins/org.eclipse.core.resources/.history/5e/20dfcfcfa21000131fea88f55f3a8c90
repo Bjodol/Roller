@@ -1,0 +1,6 @@
+package roadSearcher.roller;
+
+public class Globals {
+	public static int currentThrow = 0;
+	public static int lastThrow = 0;
+}

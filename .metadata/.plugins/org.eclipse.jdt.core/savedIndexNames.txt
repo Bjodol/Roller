@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+C:\Users\Bjodol\Documents\GitHub\Roller\.metadata\.plugins\org.eclipse.jdt.core
+1908379888.index
+560004595.index
+4165395719.index
+3045187792.index
+1456424389.index
