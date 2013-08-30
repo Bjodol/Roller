@@ -920,3 +920,11 @@ org.eclipse.core.internal.resources.ResourceException: A resource already exists
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2013-08-29 17:35:37.204
 !MESSAGE activity_main.xml: Couldn't resolve resource @string/roll
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-08-30 19:11:48.208
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2013-08-30 19:11:48.210
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-08-30 19:11:48.210
+!MESSAGE The project description file (.project) for 'Roller' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
