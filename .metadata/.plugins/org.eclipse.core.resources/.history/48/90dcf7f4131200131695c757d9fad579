@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill_vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+  
+  	<Button
+  	    android:id="@+id/d20"
+  	    android:background="@drawable/d20"
+  	   	android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d20"
+        android:onClick="d20" />
+
+  	<TextView
+        android:id="@+id/dice_type"
+        android:layout_toRightOf="@id/d20"
+        android:layout_alignBaseline="@id/d20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noDiceType"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/current_roll_text"
+        android:layout_toRightOf="@id/d12"
+        android:layout_alignBaseline="@id/d12"
+        android:layout_below="@id/dice_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/youRolled"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/dice_throw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/d8"
+        android:layout_alignTop="@+id/d10"
+        android:layout_toRightOf="@id/d20"
+        android:text="@string/noRolls"
+        android:textAlignment="center"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/last_roll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/d6"
+        android:layout_alignBottom="@+id/d6"
+        android:layout_alignLeft="@+id/dice_throw"
+        android:text="@string/lastRoll"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/last_roll_value"
+        android:layout_toRightOf="@id/last_roll_text"
+        android:layout_alignBaseline="@id/last_roll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noRolls"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/d4"
+        android:layout_alignBottom="@+id/d4"
+        android:layout_alignLeft="@+id/last_roll_text"
+        android:text="@string/roll"
+        android:onClick="roll" />
+
+    <Button
+        android:id="@+id/d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/roll_button"
+        android:background="@drawable/d4"
+        android:onClick="d4"
+        android:text="@string/d4" />
+
+    <Button
+        android:id="@+id/d8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d6"
+        android:layout_alignLeft="@+id/d6"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/d8"
+        android:onClick="d8"
+        android:text="@string/d8" />
+
+    <Button
+        android:id="@+id/d10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d8"
+        android:layout_alignLeft="@+id/d8"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/d10"
+        android:onClick="d10"
+        android:text="@string/d10" />
+
+    <Button
+        android:id="@+id/d12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/d20"
+        android:layout_below="@+id/d20"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/d12"
+        android:onClick="d12"
+        android:text="@string/d12" />
+
+    <Button
+        android:id="@+id/d6"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/roll_button"
+        android:layout_marginBottom="31dp"
+        android:layout_toLeftOf="@+id/last_roll_text"
+        android:background="@drawable/d6"
+        android:onClick="d6"
+        android:text="@string/d6" />
+
+</RelativeLayout>

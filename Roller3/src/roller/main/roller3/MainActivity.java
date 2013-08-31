@@ -35,12 +35,12 @@ public class MainActivity extends Activity {
 	
 	public void roll(View view){
 		TextView currentRollValue = (TextView) findViewById(R.id.dice_throw);
-		TextView LastRollValue = (TextView) findViewById(R.id.last_roll_value);
+		TextView LastRollValue = (TextView) findViewById(R.id.last_roll_text);
 		
 		if (type.equals(NoTypeString)) {
 			updateText();
 		} else {
-			String rollString = "" + roll;
+			String rollString = "Last roll:" + roll;
 			LastRollValue.setText(rollString);
 			Random r = new Random();
 			int i1 = r.nextInt(dice - min + 1) + min;
